@@ -1,27 +1,53 @@
 <!doctype html>
 <html>
-<head>   
-<meta charset="UTF-8">
-<title>安宁区信服食堂数据新闻</title>
-<style type="text/css">
-body {
-    margin: 0;
-    min-height: 100vh;
-    background-image: url("https://img.remit.ee/i/CbgAaflV6fNB");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-}
-</style>
+<head>
+  <meta charset="UTF-8">
+  <title>安宁区信服食堂数据新闻</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-image: url("https://img.remit.ee/i/CbgAaflV6fNB");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .video-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;   /* 水平居中 */
+      margin-top: 40px;
+    }
+
+    .video-box video {
+      display: block;
+      width: 90%;                /* 占屏幕宽度 90% */
+      max-width: 1200px;         /* 最大不超过 1200px */
+      height: auto;              /* 高度按比例自动 */
+      border-radius: 12px;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      color: white;
+      font-size: 25px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-<div style="font-family:verdana;padding:20px;border-radius:110px;border:10px solid #fffefe;height:1000px; text-align:center">
-<video width="320" height="240" controls>
-  <source src="https://static2.char123.com/videos/movie.mp4" type="video/mp4">
-  <source src="https://static2.char123.com/videos/movie.ogg" type="video/ogg">
-  <source src="movie.webm" type="video/webm">
-</video>
-    <a href="https://chusheng-114514.github.io/xfst/" style="color:white;font-size:25px">返回主页</a>
+
+  <div class="video-box">
+    <video controls autoplay muted playsinline preload="metadata">
+      <source src="https://chusheng-114514.github.io/xfst/video.mp4" type="video/mp4">
+      您的浏览器不支持 video 标签。
+    </video>
+  </div>
+
+  <a href="https://chusheng-114514.github.io/xfst/" class="back-link">返回主页</a>
+
 </body>
 </html>
